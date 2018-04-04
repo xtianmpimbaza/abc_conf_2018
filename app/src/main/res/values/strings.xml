@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ABC2018 CONFERENCE</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_schedule">Schedule</string>
+    <string name="title_speakers">Speakers</string>
+    <string name="title_sponsors">Sponsors</string>
+
+    <string name="hello_blank_fragment">blank fragment</string>
+    <string name="home_paragraph_one">On the 23rd and 24th May, leaders in policy, business and
+        academia from around the world will converge in Kampala for Africa’s largest blockchain
+        conference.</string>
+    <string name="home_paragraph_two">Organized by The Blockchain Association of Uganda, with support
+        from the Government of Uganda, the Africa Blockchain Conference will concentrate on “the role
+        of blockchain technology in Africa’s transformation.”</string>
+    <string name="home_paragraph_three">Through a series of impactful and experiential sessions,
+        participants will realise their role in how to support a thriving blockchain innovation and business ecosystem.</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>
