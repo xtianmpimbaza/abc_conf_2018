@@ -29,7 +29,8 @@
         </activity>
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.AtendantActivity"></activity>
+        <activity android:name=".Activities.AtendantActivity" />
+        <activity android:name=".Activities.ScheduleActivity"></activity>
     </application>
 
 </manifest>

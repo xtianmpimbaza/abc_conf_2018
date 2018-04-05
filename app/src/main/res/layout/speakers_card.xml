@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightgrey"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:textColor="@color/colorCirclebgred"
+                android:id="@+id/sp_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/sp_title"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Title"/>
+
+            <TextView
+                android:id="@+id/sp_country"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorCirclebgred"
+                android:text="Country"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

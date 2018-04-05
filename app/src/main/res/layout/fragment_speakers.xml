@@ -1,14 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="60dp"-->
+    <!--tools:context="org.africanblockchain.abc2018conference.Fragments.SpeakersFragment">-->
+
+
+<!--</FrameLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="60dp"
-    tools:context="org.africanblockchain.abc2018conference.Fragments.SpeakersFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rv_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/title_speakers" />
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
 
-</FrameLayout>
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/empty_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightgrey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/thumbnail_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:text="No speakers"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/title_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Check your internet"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

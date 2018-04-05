@@ -292,6 +292,17 @@
                     android:textColor="@color/colorDarkgrey"
                     android:textStyle="normal" />
 
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/summary_eve_list"
+                    android:adjustViewBounds="true"/>
+
             </LinearLayout>
 
         </LinearLayout>

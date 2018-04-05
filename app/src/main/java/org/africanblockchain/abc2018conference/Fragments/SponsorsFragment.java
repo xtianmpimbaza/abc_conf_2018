@@ -42,8 +42,6 @@ public class SponsorsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_item_list, container, false);
 
         AppCompatActivity activity = (AppCompatActivity) getActivity();
-//        ActionBar actionBar = activity.getSupportActionBar();
-//        actionBar.show();
 
         // Set the adapter
         if (view instanceof RecyclerView) {
