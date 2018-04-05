@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import org.africanblockchain.abc2018conference.Fragments.HomeFragment;
+import org.africanblockchain.abc2018conference.Fragments.ScheduleFragment;
 import org.africanblockchain.abc2018conference.Fragments.SpeakersFragment;
 import org.africanblockchain.abc2018conference.Fragments.SponsorsFragment;
 
@@ -31,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
                     openFragment(new HomeFragment());
                     return true;
                 case R.id.navigation_schedule:
-                    openFragment(new HomeFragment());
+                    openFragment(new ScheduleFragment());
                     return true;
                 case R.id.navigation_speakers:
                     openFragment(new SpeakersFragment());
                     return true;
-                case R.id.navigation_sponsors:
-                    openFragment(new SponsorsFragment());
-                    return true;
+//                case R.id.navigation_sponsors:
+//                    openFragment(new SponsorsFragment());
+//                    return true;
             }
             return false;
         }

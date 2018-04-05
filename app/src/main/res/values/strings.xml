@@ -6,6 +6,7 @@
 
     <string name="title_schedule">Schedule</string>
     <string name="title_speakers">Speakers</string>
+    <string name="title_more">More</string>
     <string name="title_sponsors">Sponsors</string>
 
     <string name="hello_blank_fragment">blank fragment</string>

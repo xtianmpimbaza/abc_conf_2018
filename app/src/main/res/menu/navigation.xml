@@ -15,9 +15,9 @@
         android:icon="@drawable/ic_speakers"
         android:title="@string/title_speakers" />
 
-    <item
-        android:id="@+id/navigation_sponsors"
-        android:icon="@drawable/ic_sponsors"
-        android:title="@string/title_sponsors" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_sponsors"-->
+        <!--android:icon="@drawable/ic_sponsors"-->
+        <!--android:title="@string/title_sponsors" />-->
 
 </menu>
