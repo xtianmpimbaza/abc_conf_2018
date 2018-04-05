@@ -32,4 +32,12 @@
         completions."
     </string>
 
+    <string name="counter">Time Left</string>
+    <string name="countleft">till ABC2018</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="abc_2018">ABC2018</string>
+    <string name="days">Days</string>
+
 </resources>

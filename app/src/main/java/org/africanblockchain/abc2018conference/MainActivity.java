@@ -18,10 +18,9 @@ import org.africanblockchain.abc2018conference.Fragments.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
     FragmentManager fragmentManager = getFragmentManager();
     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
+    private TextView mTextMessage;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -31,10 +30,13 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     openFragment(new HomeFragment());
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_schedule:
+                    openFragment(new HomeFragment());
+                    return true;
+                case R.id.navigation_speakers:
                     openFragment(new SpeakersFragment());
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_sponsors:
                     openFragment(new SponsorsFragment());
                     return true;
             }
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void openFragment(final Fragment fragment)   {
+    private void openFragment(final Fragment fragment) {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.container, fragment);
