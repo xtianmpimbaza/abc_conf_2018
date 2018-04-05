@@ -3,6 +3,7 @@ package org.africanblockchain.abc2018conference;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import org.africanblockchain.abc2018conference.Activities.AtendantActivity;
 import org.africanblockchain.abc2018conference.Fragments.HomeFragment;
 import org.africanblockchain.abc2018conference.Fragments.ScheduleFragment;
 import org.africanblockchain.abc2018conference.Fragments.SpeakersFragment;
@@ -35,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
                     openFragment(new ScheduleFragment());
                     return true;
                 case R.id.navigation_speakers:
-                    openFragment(new SpeakersFragment());
+//                    openFragment(new SpeakersFragment());
+                    startActivity(new Intent(MainActivity.this, AtendantActivity.class));
                     return true;
 //                case R.id.navigation_sponsors:
 //                    openFragment(new SponsorsFragment());
@@ -58,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
 
         openFragment(new HomeFragment());
 
