@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import org.africanblockchain.abc2018conference.Activities.AtendantActivity;
+import org.africanblockchain.abc2018conference.Activities.ScheduleActivity;
 import org.africanblockchain.abc2018conference.Fragments.HomeFragment;
 import org.africanblockchain.abc2018conference.Fragments.ScheduleFragment;
 import org.africanblockchain.abc2018conference.Fragments.SpeakersFragment;
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
                     openFragment(new HomeFragment());
                     return true;
                 case R.id.navigation_schedule:
-                    openFragment(new ScheduleFragment());
+//                    openFragment(new ScheduleFragment());
+                    startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
                     return true;
                 case R.id.navigation_speakers:
 //                    openFragment(new SpeakersFragment());

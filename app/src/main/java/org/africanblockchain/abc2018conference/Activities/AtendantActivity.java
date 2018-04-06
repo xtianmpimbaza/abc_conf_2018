@@ -33,7 +33,7 @@ public class AtendantActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("ABC 2018");
+        getSupportActionBar().setTitle("Speakers and Sponsors");
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -46,7 +46,6 @@ public class AtendantActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SpeakersFragment(), "Speakers");
         adapter.addFragment(new SponsorsFragment(), "Sponsors");
-//        adapter.addFragment(new ThreeFragment(), "THREE");
         viewPager.setAdapter(adapter);
     }
 

@@ -73,9 +73,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ButterKnife.bind(this, v);
 
         AppCompatActivity activity = (AppCompatActivity) getActivity();
-//        ActionBar actionBar = activity.getSupportActionBar();
-//        actionBar.hide();
-
 
         Button login = (Button) v.findViewById(R.id.login);
         Button booking = (Button) v.findViewById(R.id.booking);
