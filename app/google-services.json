@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "595328197548",
+    "firebase_url": "https://abc2018-conference.firebaseio.com",
+    "project_id": "abc2018-conference",
+    "storage_bucket": "abc2018-conference.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595328197548:android:7c44c02d07381c22",
+        "android_client_info": {
+          "package_name": "org.africanblockchain.abc2018conference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595328197548-o87s410qi30ihe6gk1mefni4lqrj0r4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoVRFWzYGNPDOXu0S2Fnrqa4q0Hpqp0N4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
