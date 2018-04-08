@@ -17,15 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <service android:name=".Notifications.MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service android:name=".Notifications.FirebaseIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
@@ -46,7 +45,13 @@
         <activity
             android:name=".Activities.EventMapActivity"
             android:label="@string/title_activity_event_map"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.AboutActivity" />
+        <activity android:name=".Activities.SpeakersActivity" />
+        <activity android:name=".Activities.ExhibitorsActivity" />
+        <activity android:name=".Activities.SponsorActivity" />
+        <activity android:name=".Activities.AttendeeActivity"></activity>
+        <activity android:name=".Activities.EmailActivity"></activity>
     </application>
 
 </manifest>

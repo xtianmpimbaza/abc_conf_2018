@@ -2,6 +2,7 @@ package org.africanblockchain.abc2018conference.Adapters;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.text.SpannableString;
@@ -20,16 +21,25 @@ import com.bumptech.glide.request.RequestOptions;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import org.africanblockchain.abc2018conference.Activities.EmailActivity;
+import org.africanblockchain.abc2018conference.Activities.HomeActivity;
+import org.africanblockchain.abc2018conference.Activities.LoginActivity;
 import org.africanblockchain.abc2018conference.R;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 public class SpeakersAdapter extends RecyclerView.Adapter<SpeakersAdapter.MyViewHolder> {
     public Typeface tf;
     private Context mContext;
     private ArrayList<JsonObject> albumList;
+
+    @OnClick(R.id.contact)
+    public void goToDashboard() {
+        mContext.startActivity(new Intent(this.mContext, EmailActivity.class));
+    }
 
     public SpeakersAdapter(Context mContext, ArrayList<JsonObject> albumList) {
         this.mContext = mContext;
@@ -41,6 +51,8 @@ public class SpeakersAdapter extends RecyclerView.Adapter<SpeakersAdapter.MyView
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.speakers_card, parent, false);
+
+
 
         return new MyViewHolder(itemView);
     }
@@ -67,6 +79,8 @@ public class SpeakersAdapter extends RecyclerView.Adapter<SpeakersAdapter.MyView
             Log.e("JsonObject", sl.getAsString());
         } catch (Exception e) {
         }
+
+
 
     }
 
