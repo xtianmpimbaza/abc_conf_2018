@@ -13,10 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.africanblockchain.abc2018conference.Activities.AtendantActivity;
+import org.africanblockchain.abc2018conference.Activities.HomeActivity;
+import org.africanblockchain.abc2018conference.Activities.LoginActivity;
 import org.africanblockchain.abc2018conference.Activities.ScheduleActivity;
 import org.africanblockchain.abc2018conference.Fragments.HomeFragment;
 import org.africanblockchain.abc2018conference.Fragments.ScheduleFragment;
@@ -28,6 +31,7 @@ import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.txtDay)
@@ -51,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout linearLayout3;
     @BindView(R.id.LinearLayout4)
     LinearLayout linearLayout4;
+
+    @OnClick(R.id.login)
+    public void goToLogin() {
+        startActivity(new Intent(this, LoginActivity.class));
+    }
 
     private Handler handler;
     private Runnable runnable;
@@ -97,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
                     // Setting the date//YYYY-MM-DD of event
                     Date futureDate = dateFormat.parse("2018-5-23");
-                    Log.e("Date of the conference",futureDate.toString());
                     Date currentDate = new Date();
                     if (!currentDate.after(futureDate)) {
                         long diff = futureDate.getTime()
@@ -154,6 +162,11 @@ public class MainActivity extends AppCompatActivity {
 
 //        openFragment(new HomeFragment());
         countDownStart();
+
+//        Button login = (Button)findViewById(R.id.login);
+//        Button booking = (Button)findViewById(R.id.booking);
+//
+//        login.setOnClickListener(myhandler);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
